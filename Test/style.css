@@ -1,0 +1,14 @@
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    transition: transform 0.3s ease;  /* Thời gian chuyển động */
+    width: 100%;
+    height: auto;
+}
+
+.product-image:hover img {
+    transform: scale(1.1);  /* Phóng to ảnh lên 1.1 lần khi hover */
+}

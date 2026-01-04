@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Thông Tin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Nhập Thông Tin</h2>
+    <form id="infoForm">
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name" required />
+
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" required />
+
+      <label for="gmail">Gmail:</label>
+      <input type="email" id="gmail" required />
+
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" required />
+
+      <div class="form-buttons">
+        <button type="button" onclick="history.back()">Quay lại</button>
+        <button type="submit">Xác nhận</button>
+      </div>
+
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

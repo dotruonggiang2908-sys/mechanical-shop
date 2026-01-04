@@ -1,0 +1,246 @@
+/* Reset & box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header cố định */
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: #ffd500;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Header top */
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.search-box {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.profile {
+    background-color: #ffd500;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.profile:hover {
+    background-color: white;
+}
+
+.profile a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Header main */
+.header_main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0 40px 10px;
+    background-color: #ffd500;
+    list-style: none;
+}
+
+.header_main li {
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.header_main li:hover {
+    background-color: white;
+}
+
+.header_main li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Ảnh sản phẩm */
+.product-image {
+    margin-top: 140px; /* tránh header */
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Tiêu đề sản phẩm */
+.product-card-name {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card-name h2 {
+    margin: 0 0 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e53935;
+    margin: 0;
+}
+
+/* Nội dung chi tiết */
+.product-card-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+.info-label {
+    width: 140px;
+    font-weight: normal;
+    color: #000;
+    flex-shrink: 0;
+}
+
+.info-value {
+    flex: 1;
+    color: #444;
+}
+
+.button-group-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffd500;
+    color: #000;
+}
+
+.btn-outline:hover {
+    background-color: #ffd500;
+    color: white;
+}
+
+.btn-solid {
+    background-color: #ffd500;
+    color: black;
+}
+
+.btn-solid:hover {
+    background-color: #e6be00;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #ffd500;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+    max-width: 300px;
+    color: black;
+}
+
+.footer h1 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-column4 p{
+    color: black;
+    transition: ease;
+    text-align: left;
+}
+.footer-column4 p:hover{
+    color: rgb(69, 127, 235);
+}
